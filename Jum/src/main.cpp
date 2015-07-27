@@ -10,10 +10,11 @@
 #include "lib/framework.hpp"
 #include "Game/game.h"
 #include "Game/Scene_state.h"
+#include "Game/window_state.h"
 
 
 int main() {
-  AppEnv env(1024, 600);
+  AppEnv env(Width, Height, false, true);
   setSceneState(Title);
 
   while (env.isOpen()) {

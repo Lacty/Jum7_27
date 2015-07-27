@@ -1,12 +1,20 @@
-﻿2015/07/27 11:00:32 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\cygwin64\home\vantan\PS15\Framework\GameTemplate.vcxproj" (Build ターゲット)。
+﻿2015/07/28 7:40:36 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D DEBUG /D _ITERATOR_DEBUG_LEVEL=0 /D PRODUCT_NAME=GameTemplate /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\main.cpp
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D DEBUG /D _ITERATOR_DEBUG_LEVEL=0 /D PRODUCT_NAME=GameTemplate /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Game\GameMain\game_main.cpp src\Game\GameMain\player.cpp src\Game\game.cpp
+         game_main.cpp
+         player.cpp
+         game.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\cygwin64\home\vantan\PS15\Framework\GameTemplate.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\cygwin64\home\vantan\PS15\Framework\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\cygwin64\home\vantan\PS15\Framework\GameTemplate.lib" /MACHINE:X86 Debug\collision.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.lib" /MACHINE:X86 Debug\collision.obj
          Debug\game.obj
+         Debug\enemy.obj
+         Debug\enemy_manager.obj
          Debug\game_main.obj
+         Debug\gimic.obj
+         Debug\player.obj
+         Debug\stage.obj
+         Debug\stage_state.obj
          Debug\result.obj
          Debug\scene_state.obj
          Debug\title.obj
@@ -31,9 +39,9 @@
          Debug\utils.obj
          Debug\wav.obj
          Debug\main.obj
-         GameTemplate.vcxproj -> C:\cygwin64\home\vantan\PS15\Framework\GameTemplate.exe
-     1>プロジェクト "C:\cygwin64\home\vantan\PS15\Framework\GameTemplate.vcxproj" (Build ターゲット) のビルドが完了しました。
+         GameTemplate.vcxproj -> C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.exe
+     1>プロジェクト "C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.vcxproj" (Build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:01.50
+経過時間 00:00:02.51

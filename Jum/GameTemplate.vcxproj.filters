@@ -114,6 +114,27 @@
     <ClInclude Include="src\Game\Collision\collision.h">
       <Filter>Game\Collision</Filter>
     </ClInclude>
+    <ClInclude Include="src\Game\GameMain\enemy.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameMain\enemy_manager.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameMain\player.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameMain\stage.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameMain\gimic.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\window_state.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameMain\stage_state.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\lib\appEnv.cpp">
@@ -194,6 +215,24 @@
     </ClCompile>
     <ClCompile Include="src\Game\Collision\collision.cpp">
       <Filter>Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\enemy.cpp">
+      <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\enemy_manager.cpp">
+      <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\player.cpp">
+      <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\stage.cpp">
+      <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\gimic.cpp">
+      <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\stage_state.cpp">
+      <Filter>Game\GameMain</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

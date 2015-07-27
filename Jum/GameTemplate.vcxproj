@@ -13,10 +13,17 @@
   <ItemGroup>
     <ClInclude Include="src\Game\Collision\collision.h" />
     <ClInclude Include="src\Game\game.h" />
+    <ClInclude Include="src\Game\GameMain\enemy.h" />
+    <ClInclude Include="src\Game\GameMain\enemy_manager.h" />
     <ClInclude Include="src\Game\GameMain\game_main.h" />
+    <ClInclude Include="src\Game\GameMain\gimic.h" />
+    <ClInclude Include="src\Game\GameMain\player.h" />
+    <ClInclude Include="src\Game\GameMain\stage.h" />
+    <ClInclude Include="src\Game\GameMain\stage_state.h" />
     <ClInclude Include="src\Game\Result\result.h" />
     <ClInclude Include="src\Game\scene_state.h" />
     <ClInclude Include="src\Game\Title\title.h" />
+    <ClInclude Include="src\Game\window_state.h" />
     <ClInclude Include="src\lib\appEnv.hpp" />
     <ClInclude Include="src\lib\audio.hpp" />
     <ClInclude Include="src\lib\camera2D.hpp" />
@@ -45,7 +52,13 @@
   <ItemGroup>
     <ClCompile Include="src\Game\Collision\collision.cpp" />
     <ClCompile Include="src\Game\game.cpp" />
+    <ClCompile Include="src\Game\GameMain\enemy.cpp" />
+    <ClCompile Include="src\Game\GameMain\enemy_manager.cpp" />
     <ClCompile Include="src\Game\GameMain\game_main.cpp" />
+    <ClCompile Include="src\Game\GameMain\gimic.cpp" />
+    <ClCompile Include="src\Game\GameMain\player.cpp" />
+    <ClCompile Include="src\Game\GameMain\stage.cpp" />
+    <ClCompile Include="src\Game\GameMain\stage_state.cpp" />
     <ClCompile Include="src\Game\Result\result.cpp" />
     <ClCompile Include="src\Game\scene_state.cpp" />
     <ClCompile Include="src\Game\Title\title.cpp" />
