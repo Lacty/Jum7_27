@@ -36,6 +36,7 @@ void gameMainSetup() {
   player.Setup();
 
   Getter::get();
+  Getter::get().isClear = false;
 }
 
 void gameMainUpdate(AppEnv& env) {
@@ -47,8 +48,13 @@ void gameMainUpdate(AppEnv& env) {
   player.Update(env);
 
   Getter::get().patern = player.gimic_patern;
+  if (stage.isClear()) {
+    Getter::get().isClear = true;
+    setSceneState(SceneState::Result);
+  }
 
   if (env.isPushKey('R')) {
+    Getter::get().isClear = true;
     setSceneState(SceneState::Result);
   }
 }

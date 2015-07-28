@@ -13,6 +13,7 @@ public:
 	void Set_up();
 	void Update(); 
 	void Draw();
+  bool isClear();
 
 private:
 

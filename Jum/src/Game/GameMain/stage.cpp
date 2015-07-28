@@ -20,6 +20,10 @@ void Stage::Set_up()
 }
 
 
+bool Stage::isClear() {
+  return time < 0;
+}
+
 void Stage::Update()
 {
   const int scroll_speed = 12;

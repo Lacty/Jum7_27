@@ -11,5 +11,6 @@ public:
     return getter;
   }
 
+  bool isClear;
   Gimic::PATERN patern;
 };
