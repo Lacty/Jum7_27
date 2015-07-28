@@ -28,6 +28,6 @@ void titleDraw() {
   drawTextureBox(-512, -300, 1024, 600,
                  0, 0, 1024, 600, bg, Color(1, 1, 1));
   drawTextureBox(-512, -256, 1024, 512,
-                 0, 0, 1024, 512,
+                 0, 0, 2048, 1024,
                  image, Color(1, 1, 1));
 }

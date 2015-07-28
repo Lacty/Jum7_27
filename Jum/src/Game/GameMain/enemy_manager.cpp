@@ -1,15 +1,16 @@
 #include "enemy_manager.h"
 
 
-void Enemy_manager::Create(Enemy::PATERN type) {
-  enemy.push_back(type);
+void Enemy_manager::Create(Enemy::PATERN type ,int _x) {
+	enemy.push_back({ type, _x });
 }
 
 
 void Enemy_manager::Setup() {
-  for (int i = 0; i < 10; ++i) {
-    Create(Enemy::PATERN::RUN_TYPE);
-  }
+
+	Create(Enemy::PATERN::RUN_TYPE, -460);
+	Create(Enemy::PATERN::RUN_TYPE, -450);
+	Create(Enemy::PATERN::RUN_TYPE, -400);
 }
 
 void Enemy_manager::Update() {

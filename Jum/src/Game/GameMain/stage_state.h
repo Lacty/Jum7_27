@@ -6,6 +6,7 @@ public:
   enum State {
     Start,
     Play,
+    Clear,
     Dead
   };
 

@@ -10,7 +10,7 @@ public:
     FORMAL_TYPE
   };
 
-  Enemy(PATERN type);
+  Enemy(PATERN type , int _x);
 
   void Update();
   void Draw(float& camera_x);

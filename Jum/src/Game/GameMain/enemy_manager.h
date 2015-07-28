@@ -8,7 +8,7 @@ public:
 	void Setup();
 	void Update();
   void Draw(float& camera_x);
-	void Create(Enemy::PATERN type);
+	void Create(Enemy::PATERN type , int _x);
 
   // リザルトに飛ぶ前に実行させること
   // Enemyの情報がすべて消去される

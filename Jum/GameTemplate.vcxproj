@@ -17,6 +17,7 @@
     <ClInclude Include="src\Game\GameMain\enemy_manager.h" />
     <ClInclude Include="src\Game\GameMain\game_main.h" />
     <ClInclude Include="src\Game\GameMain\gimic.h" />
+    <ClInclude Include="src\Game\GameMain\gimic_manager.h" />
     <ClInclude Include="src\Game\GameMain\player.h" />
     <ClInclude Include="src\Game\GameMain\stage.h" />
     <ClInclude Include="src\Game\GameMain\stage_state.h" />
@@ -56,6 +57,7 @@
     <ClCompile Include="src\Game\GameMain\enemy_manager.cpp" />
     <ClCompile Include="src\Game\GameMain\game_main.cpp" />
     <ClCompile Include="src\Game\GameMain\gimic.cpp" />
+    <ClCompile Include="src\Game\GameMain\gimic_manager.cpp" />
     <ClCompile Include="src\Game\GameMain\player.cpp" />
     <ClCompile Include="src\Game\GameMain\stage.cpp" />
     <ClCompile Include="src\Game\GameMain\stage_state.cpp" />

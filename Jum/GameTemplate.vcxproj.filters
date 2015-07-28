@@ -135,6 +135,9 @@
     <ClInclude Include="src\Game\GameMain\stage_state.h">
       <Filter>Game\GameMain</Filter>
     </ClInclude>
+    <ClInclude Include="src\Game\GameMain\gimic_manager.h">
+      <Filter>Game\GameMain</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\lib\appEnv.cpp">
@@ -232,6 +235,9 @@
       <Filter>Game\GameMain</Filter>
     </ClCompile>
     <ClCompile Include="src\Game\GameMain\stage_state.cpp">
+      <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameMain\gimic_manager.cpp">
       <Filter>Game\GameMain</Filter>
     </ClCompile>
   </ItemGroup>
