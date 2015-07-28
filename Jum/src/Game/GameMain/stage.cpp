@@ -22,7 +22,7 @@ void Stage::Set_up()
 
 void Stage::Update()
 {
-  const int scroll_speed = 16;
+  const int scroll_speed = 12;
 	--time;
 	sky_pos.x() += scroll_speed;
 	heli_pos_x += 5;

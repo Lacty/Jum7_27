@@ -8,6 +8,7 @@ Player::Player() {}
 
 void Player::Gravity(AppEnv &env) {
   if (is_jump == false && env.isPushButton(Mouse::LEFT)) {
+	  jump.play();
     is_jump = true;
   }
 
@@ -26,7 +27,10 @@ void Player::Gravity(AppEnv &env) {
 void Player::Setup() {
   status = STATUS::ACTIVE;
   image = Texture("res/hagerunjump.png");
-
+  jump = Media("res/jump.wav");
+  bgm = Media("res/bgm.wav");
+  bgm.play();
+  bgm.looping(1);
   player_pos = Vec2f(Init_X, Init_Y);
   is_jump = false;
   time = 0;

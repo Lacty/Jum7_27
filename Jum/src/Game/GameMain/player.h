@@ -11,12 +11,12 @@ private:
     Init_Y = GROUND_Y
   };
 
-  Gimic::PATERN gimic_patern;
   bool is_collision_fence;
   int HP;
 
 public:
   Player();
+  Gimic::PATERN gimic_patern;
 
   enum STATUS {
     ACTIVE,
@@ -40,7 +40,7 @@ public:
     if (gimic_patern == Gimic::SIGNBORAD_WHITE || gimic_patern == Gimic::SIGNBORAD_YELLOW) {
       is_collision_fence = true;
     }
-    if (gimic_patern == Gimic::FIRE || gimic_patern == Gimic::PATERN::POP_ZOMBIE) {
+	if (gimic_patern == Gimic::FIRE || gimic_patern == Gimic::PATERN::POP_ZOMBIE || gimic_patern == Gimic::PATERN::JUMP_ZOMBIE) {
       status = DEAD;
     }
   }
@@ -51,6 +51,7 @@ public:
 
   bool isDead() {
     if (status == DEAD) {
+		bgm.stop();
       return true;
     }
     return false;
@@ -66,6 +67,8 @@ private:
   int draw_time = 0;
   int jump_powor;
   Texture image;
+  Media jump;
+  Media bgm;
   int invincible_time;
 };
 

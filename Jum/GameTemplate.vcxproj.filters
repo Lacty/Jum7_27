@@ -138,6 +138,9 @@
     <ClInclude Include="src\Game\GameMain\gimic_manager.h">
       <Filter>Game\GameMain</Filter>
     </ClInclude>
+    <ClInclude Include="src\Game\Result\getter.h">
+      <Filter>Game\Result</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\lib\appEnv.cpp">
@@ -239,6 +242,9 @@
     </ClCompile>
     <ClCompile Include="src\Game\GameMain\gimic_manager.cpp">
       <Filter>Game\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Result\getter.cpp">
+      <Filter>Game\Result</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

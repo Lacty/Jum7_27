@@ -8,6 +8,7 @@
 namespace TitleVar {
   Texture bg;
   Texture image;
+  Texture player;
 }
 
 void titleSetup() {
@@ -18,7 +19,7 @@ void titleSetup() {
 
 void titleUpdate(AppEnv& env) {
   using namespace TitleVar;
-  if (env.isPressKey('G')) {
+  if (env.isPushButton(Mouse::LEFT)) {
     setSceneState(SceneState::GameMain);
   }
 }
@@ -30,4 +31,9 @@ void titleDraw() {
   drawTextureBox(-512, -256, 1024, 512,
                  0, 0, 2048, 1024,
                  image, Color(1, 1, 1));
+
+  Font font("res/meiryo.ttc");
+  const Vec2f pos = Vec2f(-200, -220);
+  font.size(40);
+  font.draw("クリックしたらスタート！", pos, Color(1, 1, 1));
 }

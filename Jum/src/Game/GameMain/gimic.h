@@ -6,6 +6,7 @@ public:
   enum PATERN {
     FIRE,
 	POP_ZOMBIE,
+	JUMP_ZOMBIE,
     SIGNBORAD_YELLOW,
     SIGNBORAD_WHITE
   } patern;
@@ -25,4 +26,7 @@ private:
   Texture image;
   int draw_time;
   bool is_draw;
+  bool is_jump;
+  float gravity;
+  int time;
 };

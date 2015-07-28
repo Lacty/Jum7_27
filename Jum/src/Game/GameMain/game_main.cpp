@@ -7,6 +7,7 @@
 #include "gimic.h"
 #include "gimic_manager.h"
 #include "stage_state.h"
+#include "../Result/getter.h"
 
 #include "../Collision/collision.h"
 
@@ -33,6 +34,8 @@ void gameMainSetup() {
   gimic_manager.Setup();
 
   player.Setup();
+
+  Getter::get();
 }
 
 void gameMainUpdate(AppEnv& env) {
@@ -42,6 +45,12 @@ void gameMainUpdate(AppEnv& env) {
   enemy_manager.Update();
   gimic_manager.Update(player);
   player.Update(env);
+
+  Getter::get().patern = player.gimic_patern;
+
+  if (env.isPushKey('R')) {
+    setSceneState(SceneState::Result);
+  }
 }
 
 void gameMainDraw() {

@@ -1,7 +1,7 @@
-﻿2015/07/28 14:55:14 にビルドを開始しました。
+﻿2015/07/28 16:40:59 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /MP /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Game\GameMain\enemy.cpp src\Game\GameMain\enemy_manager.cpp src\Game\GameMain\game_main.cpp src\Game\GameMain\gimic.cpp src\Game\GameMain\gimic_manager.cpp src\Game\GameMain\player.cpp src\Game\GameMain\stage.cpp src\Game\Title\title.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /MP /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Game\GameMain\enemy.cpp src\Game\GameMain\enemy_manager.cpp src\Game\GameMain\game_main.cpp src\Game\GameMain\gimic.cpp src\Game\GameMain\gimic_manager.cpp src\Game\GameMain\player.cpp src\Game\GameMain\stage.cpp src\Game\Result\getter.cpp src\Game\Result\result.cpp
          enemy.cpp
          enemy_manager.cpp
          game_main.cpp
@@ -9,7 +9,8 @@
          gimic_manager.cpp
          player.cpp
          stage.cpp
-         title.cpp
+         getter.cpp
+         result.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\cygwin64\home\vantan\Jum7_27\Jum\GameTemplate.lib" /MACHINE:X86 /SAFESEH Release\collision.obj
          Release\game.obj
@@ -21,6 +22,7 @@
          Release\player.obj
          Release\stage.obj
          Release\stage_state.obj
+         Release\getter.obj
          Release\result.obj
          Release\scene_state.obj
          Release\title.obj
@@ -52,4 +54,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:08.06
+経過時間 00:00:09.37

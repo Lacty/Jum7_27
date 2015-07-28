@@ -20,6 +20,16 @@ Gimic::Gimic(PATERN patern , int _x) {
 	  is_draw = false;
 	 
 	  break;
+  case Gimic::JUMP_ZOMBIE:
+
+	  image = Texture("res/zombie_m.png");
+	  pos = Vec2f(_x, GROUND_Y);
+	  size = Vec2f(80, 130);
+	  is_jump = false;
+	  time = 0;
+	  gravity = 0.05f;
+	  break;
+
   case Gimic::SIGNBORAD_YELLOW: 
   {
 	  image = Texture("res/signboard_yellow.png");
@@ -38,7 +48,41 @@ Gimic::Gimic(PATERN patern , int _x) {
 void Gimic::Update() 
 {
 	++draw_time;
-  pos.x() -= 12;
+  const float speed = 12.f;
+
+  switch (this->patern) 
+  {
+  case Gimic::JUMP_ZOMBIE:
+	  if (!is_jump)
+	  {
+		  is_jump = true;
+	  }
+
+	  if (is_jump)
+	  {
+		  ++time;
+		  pos.y() += 6 - gravity * time* time / 1.4f;
+
+		  if (pos.y() < GROUND_Y)
+		  {
+			  time = 0;
+			  is_jump = false;
+		  }
+	  }
+
+	  break;
+
+  default:
+
+
+	  break;
+
+  }
+  pos.x() -= speed;
+
+  if (pos.x() < -15000) {
+    pos.x() = EDGE_RIGHT * 2;
+  }
 }
 
 
@@ -68,6 +112,31 @@ void Gimic::Draw()
 
 	} break;
 
+	case Gimic::JUMP_ZOMBIE:
+
+		if (draw_time < 8)
+		{
+			drawTextureBox(pos.x() - 60, pos.y(), size.x() + 80, size.y() + 100,
+				0, 0, 150, 256, image, Color::white);
+		}
+
+		if (draw_time > 7 && draw_time < 15)
+		{
+			drawTextureBox(pos.x() - 60, pos.y(), size.x() + 80, size.y() + 100,
+				290, 0, 150, 256, image, Color::white);
+		}
+
+		if (draw_time > 14  && draw_time < 22)	
+		{
+			drawTextureBox(pos.x() - 60, pos.y(), size.x() + 80, size.y() + 60,
+				580, 0, 150, 256, image, Color::white);
+		}
+
+		if (draw_time > 21)
+		{
+			draw_time = 0;
+		}
+		break;
 	case Gimic::POP_ZOMBIE:
 	{
 		if (pos.x() < 400)
